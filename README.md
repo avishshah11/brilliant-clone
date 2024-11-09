@@ -18,4 +18,4 @@ Follow the steps below to get started with the project:
 
 # Features Implemented
 
-I have implemented almost all the features which were asked for in assignment with minor trade off in design due to time constraint
+I have implemented almost all the features requested in the assignment, with minor trade-offs in design due to time constraints.
