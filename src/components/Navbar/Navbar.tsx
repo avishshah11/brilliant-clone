@@ -55,6 +55,10 @@ const NavBar: React.FC = () => {
       }
     }
   };
+
+  const handleSignIn = () => {
+    navigate("/signup")
+  }
   return (
     <NavbarContainer>
       <div style={{ display: "flex", alignItems: "center" }}>
@@ -74,7 +78,7 @@ const NavBar: React.FC = () => {
       {user ? (
         <LogoutButton onClick={handleLogout}>Log out</LogoutButton>
       ) : (
-        <LoginButton>Log in</LoginButton>
+        <LoginButton onClick={handleSignIn}>Log in</LoginButton>
       )}
     </NavbarContainer>
   );
