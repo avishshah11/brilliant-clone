@@ -2,6 +2,12 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../context/AuthContext";
+import lighting from "../../../assets/lighting.png";
+import cs from "../../../assets/computer-science.png";
+import recommend1 from "../../../assets/recommend-1.png";
+import recommend2 from "../../../assets/recommend-2.png";
+import recommend3 from "../../../assets/recommend-3.png";
+import recommend4 from "../../../assets/recommend-4.png";
 
 const PageContainer = styled.div`
   display: flex;
@@ -224,7 +230,7 @@ const WeekDaysIcons = () => {
       {days.map((day, index) => (
         <IconContainer key={index}>
           <IconCircle>
-            <Icon src="/src/assets/lighting.png" alt="streak" />
+            <Icon src={lighting} alt="streak" />
           </IconCircle>
           <DayLabel>{day}</DayLabel>
         </IconContainer>
@@ -242,7 +248,7 @@ const Home: React.FC = () => {
         <StreakCard>
           <StreakRow>
             <StreakNumber>9</StreakNumber>
-            <Icon src="/src/assets/lighting.png" alt="streak" />
+            <Icon src={lighting} alt="streak" />
           </StreakRow>
           <WeekDaysIcons />
         </StreakCard>
@@ -251,7 +257,7 @@ const Home: React.FC = () => {
         <JumpBackInHeader>Jump back in</JumpBackInHeader>
         <Card>
           <CardImage
-            src="/src/assets/computer-science.png"
+            src={cs}
             alt="computer-science"
           />
           <StyledLink to="/signin">Python · Level 4</StyledLink>
@@ -262,7 +268,7 @@ const Home: React.FC = () => {
         <CardsRow>
           <RecommendedCard>
             <RecommendedCardImage
-              src="src/assets/recommend-1.png"
+              src={recommend1}
               alt="Recommended-1"
             />
             <RecommendedCardTitle>Logic · Level 1</RecommendedCardTitle>
@@ -270,7 +276,7 @@ const Home: React.FC = () => {
           </RecommendedCard>
           <RecommendedCard>
             <RecommendedCardImage
-              src="src/assets/recommend-2.png"
+              src={recommend2}
               alt="Recommended-1"
             />
             <RecommendedCardTitle>Sci · Level 1</RecommendedCardTitle>
@@ -278,7 +284,7 @@ const Home: React.FC = () => {
           </RecommendedCard>
           <RecommendedCard>
             <RecommendedCardImage
-              src="src/assets/recommend-3.png"
+              src={recommend3}
               alt="Recommended-1"
             />
             <RecommendedCardTitle>CS · Level 1</RecommendedCardTitle>
@@ -286,7 +292,7 @@ const Home: React.FC = () => {
           </RecommendedCard>
           <RecommendedCard>
             <RecommendedCardImage
-              src="src/assets/recommend-4.png"
+              src={recommend4}
               alt="Recommended-1"
             />
             <RecommendedCardTitle>Math · Level 1</RecommendedCardTitle>

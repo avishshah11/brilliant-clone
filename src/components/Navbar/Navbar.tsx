@@ -4,6 +4,7 @@ import { LoginButton, LogoutButton, NavButton } from "../Buttons/Buttons";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import { deleteUser, getAuth, signOut } from "firebase/auth";
+import brilliantLogo from "../../assets/brilliant-logo.png";
 
 const NavbarContainer = styled.nav`
   display: flex;
@@ -57,14 +58,14 @@ const NavBar: React.FC = () => {
   };
 
   const handleSignIn = () => {
-    navigate("/signup")
-  }
+    navigate("/signup");
+  };
   return (
     <NavbarContainer>
       <div style={{ display: "flex", alignItems: "center" }}>
         <Logo>
           <Link to="/">
-            <img src="/src/assets/brilliant-logo.png" alt="logo" />
+            <img src={brilliantLogo} alt="logo" />
           </Link>
         </Logo>
         {user ? <NavButton onClick={handleHomeButton}>Home</NavButton> : <></>}

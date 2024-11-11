@@ -1,5 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import math from "../../assets/math.png";
+import data from "../../assets/data.png";
+import science from "../../assets/science.png";
+import engg from "../../assets/programming.png";
+import computer from "../../assets/computer.png";
 
 const IconRow = styled.div`
   display: flex;
@@ -45,23 +50,23 @@ const Subjects: React.FC = () => {
   return (
     <IconRow>
       <IconItem>
-        <img src="/src/assets/math.png" alt="math" />
+        <img src={math} alt="math" />
         <p>Math</p>
       </IconItem>
       <IconItem>
-        <img src="/src/assets/data.png" alt="math" />
+        <img src={data} alt="math" />
         <p>Data Analysis</p>
       </IconItem>
       <IconItem>
-        <img src="/src/assets/computer.png" alt="math" />
+        <img src={computer} alt="math" />
         <p>Computer Science</p>
       </IconItem>
       <IconItem>
-        <img src="/src/assets/programming.png" alt="math" />
+        <img src={engg} alt="math" />
         <p>Programming & AI</p>
       </IconItem>
       <IconItem>
-        <img src="/src/assets/science.png" alt="math" />
+        <img src={science} alt="math" />
         <p>Science & Engineering</p>
       </IconItem>
     </IconRow>

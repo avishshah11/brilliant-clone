@@ -10,6 +10,8 @@ import {
 import { auth } from "../../firebase/firebaseSetup";
 import { GoogleAuthButton, SignUpButton } from "../Buttons/Buttons";
 import { AuthContext } from "../../context/AuthContext";
+import googleLogo from "../../assets/google.png";
+import signUp from "../../assets/sign-up.svg";
 
 const SignUpContainer = styled.div`
   display: flex;
@@ -181,14 +183,14 @@ const SignUp: React.FC = () => {
 
   return (
     <SignUpContainer>
-      <ImageContainer src="/src/assets/sign-up.svg" alt="sign-up" />
+      <ImageContainer src={signUp} alt="sign-up" />
       <FormContainer>
         <FormHeader>
           Create a free account to discover your personalized learning path
         </FormHeader>
         <GoogleAuthButton>
           <div className="google-btn" onClick={handleGoogleSignIn}>
-            <img src="/src/assets/google.png" alt="Google Logo" />
+            <img src={googleLogo} alt="Google Logo" />
           </div>
         </GoogleAuthButton>
         <Separator>

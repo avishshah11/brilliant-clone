@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { GettingStartedButton } from "../Buttons/Buttons";
 import { useNavigate } from "react-router-dom";
+import ipadVisual from "../../assets/ipad-visual.jpg";
 
 const HeroSection = styled.section`
   display: flex;
@@ -105,7 +106,7 @@ const Hero: React.FC = () => {
         </GettingStartedButton>
       </LeftSide>
       <RightSide>
-        <RightImage src="/src/assets/ipad-visual.jpg" alt="right img" />
+        <RightImage src={ipadVisual} alt="right img" />
       </RightSide>
     </HeroSection>
   );

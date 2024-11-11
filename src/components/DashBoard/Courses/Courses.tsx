@@ -1,6 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import course1 from "../../../assets/course-1.png";
+import course2 from "../../../assets/course-2.png";
+import course3 from "../../../assets/course-3.png";
+import course4 from "../../../assets/course-4.png";
+import course5 from "../../../assets/course-5.png";
+import course6 from "../../../assets/course-6.png";
+import course7 from "../../../assets/course-7.png";
+
 
 const CourseContainer = styled.div`
   display: flex;
@@ -130,43 +138,43 @@ interface Courses {
 const cardJson: Courses[] = [
   {
     id: 1,
-    img: "/src/assets/course-1.png",
+    img: course1,
     title: "Algebra",
     isNew: "New",
   },
   {
     id: 2,
-    img: "/src/assets/course-2.png",
+    img: course2,
     title: "Programming",
     isNew: "New",
   },
   {
     id: 3,
-    img: "/src/assets/course-3.png",
+    img: course3,
     title: "Economics",
     isNew: "New",
   },
   {
     id: 4,
-    img: "/src/assets/course-4.png",
+    img: course4,
     title: "Physics",
     isNew: "New",
   },
   {
     id: 5,
-    img: "/src/assets/course-5.png",
+    img: course5,
     title: "Clustering",
     isNew: "New",
   },
   {
     id: 6,
-    img: "/src/assets/course-6.png",
+    img: course6,
     title: "How LLMs Work",
     isNew: "New",
   },
   {
     id: 7,
-    img: "/src/assets/course-7.png",
+    img: course7,
     title: "Vectors",
     isNew: "New",
   },

@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import nyt from "../../assets/nyt.png";
+import atlantic from "../../assets/atlantic.png";
+import appDay from "../../assets/app-day.png";
 
 const SocialsContainer = styled.section`
   padding: 40px;
@@ -53,16 +56,16 @@ const Socials: React.FC = () => {
       <SocialRow>
         <SocialIcon>
           <img
-            src="/src/assets/nyt.png"
+            src={nyt}
             alt="nyt"
             style={{ backgroundColor: "#ffffff" }}
           />
         </SocialIcon>
         <SocialIcon>
-          <img src="/src/assets/app-day.png" alt="app-day" />
+          <img src={appDay} alt="app-day" />
         </SocialIcon>
         <SocialIcon>
-          <img src="/src/assets/atlantic.png" alt="atlantic" style={{ backgroundColor: "#ffffff" }}/>
+          <img src={atlantic} alt="atlantic" style={{ backgroundColor: "#ffffff" }}/>
         </SocialIcon>
       </SocialRow>
     </SocialsContainer>
