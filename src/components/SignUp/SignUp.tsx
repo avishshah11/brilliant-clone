@@ -134,16 +134,7 @@ const Separator = styled.div`
   }
 `;
 
-interface FormData {
-  name: string;
-  email: string;
-}
-
 const SignUp: React.FC = () => {
-  const [formData, setFormData] = useState<FormData>({
-    name: "",
-    email: "",
-  });
   const [displayName, setDisplayName] = useState<string>("");
   const emailRef = useRef<HTMLInputElement>(null);
   const passwordRef = useRef<HTMLInputElement>(null);
@@ -188,13 +179,6 @@ const SignUp: React.FC = () => {
     }
   };
 
-  const handleFormValidation = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
   return (
     <SignUpContainer>
       <ImageContainer src="/src/assets/sign-up.svg" alt="sign-up" />
